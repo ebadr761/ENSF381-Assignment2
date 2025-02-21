@@ -221,7 +221,6 @@ ul li::before {
 /* START OF COURSE VIEW PAGE ----------------------- */
 td img {
     border-radius: 50%;
-    border: 1px solid black;
     width: 50px;
     height: 50px;
     object-fit: cover;
