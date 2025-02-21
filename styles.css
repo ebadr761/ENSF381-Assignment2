@@ -318,3 +318,8 @@ select {
 hr {
     width: 100%;
 }
+.label-dropdown-container {
+    display: flex;
+    align-items: center; /* Aligns label and select vertically */
+    gap: 10px; /* Adjust spacing between label and dropdown */
+}
