@@ -1,3 +1,327 @@
+/* Global Styles - Arial as default and remove default padding*/
+body, html {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0; 
+}
+header {
+    background-color: #004080;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0; /* Ensure no space above the footer */
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #003366;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*INDEX PAGE*/
+main {
+    margin: 0px; /* According to D2L instructions should be 20px but 0 matches the image shown in the pdf */
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+#about {
+    width: 100%;
+    background-color: #d4d4d4;
+    text-align: center;
+    padding: 20px;
+}
+#about h2 {
+    color: #003366; /* Dark Blue text for "About LMS" */
+}
+/* Custom List Style */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+ul li {
+    margin-bottom: 10px; /* space between list items*/
+}
+ul li::before {
+    content: "- "; /* Add - before each list item*/
+    color: inherit;
+}
+.list-title {
+    font-weight: bold;
+}
+
+/* Login.html PAGE CSS uses section ID #login for login.html*/
+#login label {
+    margin: 200px; /* space between list items*/
+}
+#login input {
+    max-width: 50%;
+}
+
+#login .input-container {
+    background-color: #d4d4d4;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#login .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 150px;
+}
+
+#login input[type="text"], input[type="password"] {
+    background-color: #ffffcc;
+    padding: 10px;
+    border: 3px solid #666666; 
+    border-radius: 5px;
+    width: 80%;
+}
+
+/* Login Button (Outside the form's background) */
+#login button[type="submit"] {
+    background-color: #008000; /* Green */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    max-width: 20%;
+}
+
+#login button[type="submit"]:hover {
+    background-color: #006600; /* Darker green on hover */
+}
+
+/* Forgot Password Link (Outside the form's background) */
+#login a {
+    color: #004080; /* Deep Blue */
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: block; /* Make it a block element to separate from form */
+}
+
+/*COURSE_VIEW PAGE 3. Course View (course_view.html) - 30 Marks CSS Styling Requirements: A. Header, Navigation, Footer • Same styling as Homepage. B. Term Selection (<select>) • Style dropdown menu with: o Background color: light yellow. o Border radius: 5px. o Padding: 5px. C. Course Tiles • Each tile should: o Have a background color of #e6f2ff (light blue). o Use a box-shadow effect for better visibility. o Display using the same tabular structure with 3 tiles per row. o Apply padding: 20px, margin: 15px, and border-radius: 10px. D. Accept / Decline Buttons (Pending Courses) • Accept: Green background (#4CAF50), white text. Dark green (#265e28) on hover. • Decline: Red background (#D32F2F), white text. Dark red (#821b1b) on hover.*/
+
+
+/* START OF ATTEMPT QUIZ PAGE ----------------------- */
+
+.quiz-header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+.quiz-header h2 {
+    display: none;
+}
+.quiz-main {
+    display: flex;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: white;
+}
+.quiz-info {
+        background-color: lightblue;
+        padding: 20px; 
+        width: fit-content;
+        margin: 5px;
+        margin-bottom: -5px;
+        text-align: center; 
+        font-size: large;
+}
+.quiz-main img {
+    height: 150px;
+    border-radius: 5px;
+}
+.quiz-main h2 {
+    color: #004080;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.quiz-main h3 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+.quiz-main p {
+    font-size: large;
+}
+.quiz-input {
+    display: inline block;
+    background-color: #cacaca;
+    padding: 20px 80px 20px 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+.quiz-input2 {
+    display: inline;
+    background-color: #cacaca;
+    margin-left: 20px;
+    padding: 20px 220px 20px 20px;
+    text-align: left;
+}
+.quiz-main button {
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.quiz-main button:hover {
+    background-color: darkblue;
+    color: white;
+}
+.quiz-main form button {
+    background-color: #D32F2F;
+    color: white;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.quiz-main form button:hover {
+    background-color: #821b1b;
+    color: white;
+}
+.quiz-input-spacing {
+    margin-bottom: 10px;
+}
+
+/* START OF COURSE VIEW PAGE ----------------------- */
+td img {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    border: 1px solid white;
+}
+
+/* Ensure items start from left, 3 per row */
+.table-crs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    padding: 0;
+}
+
+.table-pending {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+table td {
+    padding: 20px;
+}
+
+.tile, .tile-pending {
+    background-color: #e6f2ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Remove extra margin that was affecting layout */
+.tile {
+    margin: 0;
+}
+
+.course-img {
+    height: 275px;
+    width: 375px;
+    border-radius: 0;
+}
+
+.course-img-pending {
+    height: 390px;
+    width: 585px;
+    border-radius: 0;
+}
+
+.button-accept {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid lightblue;
+}
+
+.button-accept:hover {
+    background-color: #265e28;
+}
+
+.button-decline {
+    background-color: #D32F2F;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid lightblue;
+}
+
+.button-decline:hover {
+    background-color: #821b1b;
+}
+
+.about-heading {
+    color: #003366;
+}
+
+select {
+    background-color: lightyellow;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.main-courses {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Ensure <hr> is visible */
+hr {
+    width: 100%;
+}
+
 header {
     background-color: #004080;
     color: white;
