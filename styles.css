@@ -323,3 +323,8 @@ hr {
     align-items: center; /* Aligns label and select vertically */
     gap: 10px; /* Adjust spacing between label and dropdown */
 }
+
+/*for forget password hover shows underline on login page*/
+#login a:hover {
+    text-decoration: underline;
+}
