@@ -38,12 +38,13 @@ a:hover {
 
 /*INDEX PAGE*/
 main {
-    margin: 0px; /* According to D2L instructions should be 20px but 0 matches the image shown in the pdf */
-    padding: 0px;
+    margin: 20px; /* According to D2L instructions should be 20px but 0 matches the image shown in the pdf */
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 0 20px #d4d4d4;
 }
 h2 {
     margin-bottom: 20px;
@@ -55,6 +56,8 @@ h2 {
     background-color: #d4d4d4;
     text-align: center;
     padding: 20px;
+    box-shadow: 0 0 0 20px #d4d4d4;
+
 }
 #about h2 {
     color: #003366; /* Dark Blue text for "About LMS" */
