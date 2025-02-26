@@ -332,3 +332,23 @@ hr {
 #login .about-heading {
     margin-top: 50px;
 }
+
+/*LEADERBOARD PAGE*/
+.circular-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 1px solid black; /* Adds a solid green border */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for a "pop" effect */
+}
+#leaderboard table tr {
+    height: auto; /* Allow rows to adjust to content height */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Ensure images and cells don't add extra space */
+#leaderboard table td, table th {
+    padding: 5px; /* Minimal padding for content */
+    vertical-align: middle; /* Vertically center content */
+}
