@@ -44,7 +44,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 0 20px #d4d4d4;
 }
 h2 {
     margin-bottom: 20px;
@@ -78,6 +77,9 @@ ul li::before {
     font-weight: bold;
 }
 
+.homepage {
+    box-shadow: 0 0 0 20px #d4d4d4;
+}
 /* Login.html PAGE CSS uses section ID #login for login.html*/
 #login label {
     margin: 200px; /* space between list items*/
